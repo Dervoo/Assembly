@@ -58,7 +58,7 @@ contract Assembly {
         }
     }
 
-    function addNumber(uint256 _numberAdded) external {
+    function addNumberASS(uint256 _numberAdded) external {
         assembly {
             /// @dev set the slot where we will store the value
             let ptr := mload(0x40)
@@ -96,7 +96,7 @@ contract Assembly {
         }
     }
 
-    function addMultipleGuesses(
+    function addMultipleNumbersASS(
         address[] memory _users,
         uint256[] memory _numbers
     ) external {
